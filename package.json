@@ -1,0 +1,39 @@
+{
+  "name": "beer-color",
+  "version": "0.1.0",
+  "description": "Convert between SRM, EBC, Lovibond, hex and RGB",
+  "main": "index.js",
+  "module": "main.js",
+  "dependencies": {
+    "esm": "^3.2.25"
+  },
+  "devDependencies": {
+    "chai": "^4.1.0",
+    "eslint": "^7.12.1",
+    "eslint-config-airbnb": "^18.2.0",
+    "eslint-config-prettier": "^6.15.0",
+    "eslint-plugin-import": "^2.22.1",
+    "eslint-plugin-jsx-a11y": "^6.4.1",
+    "eslint-plugin-prettier": "^3.1.4",
+    "mocha": "^8.2.0",
+    "prettier": "^2.1.2"
+  },
+  "scripts": {
+    "test": "mocha --recursive './src/**/*.test.js' --require esm"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tomkontra/beer-color.git"
+  },
+  "keywords": [
+    "beer",
+    "brewing",
+    "color"
+  ],
+  "author": "Tom Kontra",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/tomkontra/beer-color/issues"
+  },
+  "homepage": "https://github.com/tomkontra/beer-color#readme"
+}
