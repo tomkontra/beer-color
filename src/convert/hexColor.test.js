@@ -5,7 +5,7 @@ const colors = [
   { value: 1, color: '#fafad2' },
   { value: 2, color: '#fafacc' },
   { value: 3, color: '#fafac7' },
-  { value: 4, color: '#fafac1' }
+  { value: 4, color: '#fafac1' },
 ]
 
 describe('value to hex', () => {

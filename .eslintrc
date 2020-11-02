@@ -8,17 +8,14 @@
     "ecmaVersion": 7,
     "sourceType": "module",
     "ecmaFeatures": {
-        "jsx": true,
         "experimentalObjectRestSpread": true
     }
 },
-  "extends": ["airbnb", "prettier"],
+  "extends": ["airbnb-base", "prettier"],
   "plugins": ["prettier"],
   "rules": {
     "semi": ["error", "never"],
     "semi-style": ["error", "first"],
-    "prettier/prettier": ["error"],
-    "comma-dangle": ["error", "never"],
-    "react/jsx-indent": [true, 8]
+    "prettier/prettier": ["error"]
   }
 }

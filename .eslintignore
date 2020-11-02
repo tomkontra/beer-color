@@ -7,3 +7,4 @@ webpack.*.js
 server.js
 build.js
 init.js
+index.js

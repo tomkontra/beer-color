@@ -9,17 +9,18 @@
   },
   "devDependencies": {
     "chai": "^4.1.0",
-    "eslint": "^7.12.1",
-    "eslint-config-airbnb": "^18.2.0",
+    "eslint": "^7.2.0",
+    "eslint-config-airbnb-base": "^14.2.0",
     "eslint-config-prettier": "^6.15.0",
-    "eslint-plugin-import": "^2.22.1",
+    "eslint-plugin-import": "^2.21.2",
     "eslint-plugin-jsx-a11y": "^6.4.1",
     "eslint-plugin-prettier": "^3.1.4",
     "mocha": "^8.2.0",
     "prettier": "^2.1.2"
   },
   "scripts": {
-    "test": "mocha --recursive './src/**/*.test.js' --require esm"
+    "test": "mocha --recursive './src/**/*.test.js' --require esm",
+    "lint": "eslint --ignore-path .eslintignore ./src/**/*.js"
   },
   "repository": {
     "type": "git",
