@@ -1,6 +1,6 @@
 # beer-color
 
-![npm](https://img.shields.io/npm/v/beer-color?style=flat-square)
+![npm](https://img.shields.io/npm/v/beer-color?style=flat-square&link=https://www.npmjs.com/package/beer-color&link=https://www.npmjs.com/package/beer-color)
 
 Simple library to convert between beer/malt color units and to hex.
 
