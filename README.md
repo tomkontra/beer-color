@@ -1,12 +1,15 @@
 # beer-color
+
+![npm](https://img.shields.io/npm/v/beer-color?style=flat-square)
+
 Simple library to convert between beer/malt color units and to hex.
 
 * Convert between SRM, EBC and Lovibond
-* Hex conversion is only a rough approximation and not reflective of actual beer color as this is influenced by a wide range of factors such as lighting, glass size, etc.
+* Hex conversion is only a rough approximation and not an accurate prediction of actual beer color as this is influenced by a wide range of factors such as lighting, glass size, yeast action, additions, etc.
 
 ## Usage
 
-Installation the module with: 
+Install the module with: 
 
 ```sh
  npm install beer-color
