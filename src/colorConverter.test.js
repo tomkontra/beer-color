@@ -1,28 +1,5 @@
 import { expect } from 'chai'
-import { srmToHex, convertColorUnits } from './colorConverter'
-
-describe('srm to hex', () => {
-  it('should convert srm to hex value', () => {
-    const srm = 12
-    const result = srmToHex(srm)
-
-    expect(result).to.equal('#c07238')
-  })
-
-  it('should convert srm value below 0.1 to min value', () => {
-    const srm = -1
-    const result = srmToHex(srm)
-
-    expect(result).to.equal('#fafad2')
-  })
-
-  it('should convert srm value above 31 to max value', () => {
-    const srm = 32
-    const result = srmToHex(srm)
-
-    expect(result).to.equal('#060201')
-  })
-})
+import convertColorUnits from './colorConverter'
 
 describe('convert color units', () => {
   it('should convert srm to ebc', () => {

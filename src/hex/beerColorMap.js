@@ -1,5 +1,5 @@
-// eslint-disable-next-line import/prefer-default-export
-export const beerColors = [
+// map of SRM to hex colors
+export default [
   {
     value: 0.1,
     color: '#fafad2',

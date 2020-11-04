@@ -1,10 +1,3 @@
-import { beerColors } from './beerColors'
-import valueToHex from './convert/hexColor'
-
-export function srmToHex(srm) {
-  return valueToHex(srm, beerColors)
-}
-
 function srmFromEbc(ebc) {
   return ebc * 0.508
 }
@@ -21,7 +14,7 @@ function lovibondFromSrm(srm) {
   return (srm + 0.76) / 1.3546
 }
 
-export function convertColorUnits(value, currentUnit, newUnit) {
+export default function convertColorUnits(value, currentUnit, newUnit) {
   if (value === 0 || currentUnit === newUnit) {
     return value
   }
