@@ -6,15 +6,15 @@ Simple library to convert between beer/malt color units and to hex.
 
 ## Usage
 
-Installation: 
+Installation the module with: 
 
 ```sh
  npm install beer-color
 ```
 
-Usage:
-
 ```javascript
+import { ebcToHex, lovibondToHex, srmToHex } from 'beer-color';
+
 const hex = srmToHex(3.6);
 // '#efec2e'
 const hex = ebcToHex(23.6);
@@ -24,6 +24,8 @@ const hex = lovibondToHex(0.5);
 ```
 
 ```javascript
+import { convertColorUnits } from 'beer-color';
+
 const ebc = convertColorUnits(12, 'srm', 'ebc');
 // 23.64
 const srm = convertColorUnits(12, 'ebc', 'srm');
@@ -31,6 +33,30 @@ const srm = convertColorUnits(12, 'ebc', 'srm');
 const lovibond = convertColorUnits(12, 'ebc', 'lovibond');
 // 5.06
 ```
+
+## Documentation
+
+### srmToHex(value)
+* `value` `number` SRM value to convert
+
+returns approximate hex color equivalent
+
+### ebcToHex(value)
+* `value` `number` EBC value to convert
+
+returns approximate hex color equivalent
+
+### lovibondToHex(value)
+* `value` `number` lovibond value to convert
+
+returns approximate hex color equivalent
+
+### convertColorUnits(value, sourceUnit, targetUnit)
+* `value` `number` value to convert
+* `sourceUnit` `'srm' | 'ebc' | 'lovibond'` unit of value parameter
+* `targetUnit` `'srm' | 'ebc' | 'lovibond'` unit to convert to
+
+returns converted value for the specified unit
 
 ## Testing
 To run tests:
