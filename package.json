@@ -1,12 +1,10 @@
 {
+  "type": "module",
   "name": "beer-color",
-  "version": "0.2.0",
+  "version": "1.0.0",
   "description": "Convert between SRM, EBC, Lovibond, hex and RGB",
   "main": "index.js",
-  "module": "main.js",
-  "dependencies": {
-    "esm": "^3.2.25"
-  },
+  "exports": "./index.js",
   "devDependencies": {
     "chai": "^4.1.0",
     "eslint": "^7.2.0",
@@ -19,7 +17,7 @@
     "prettier": "^2.1.2"
   },
   "scripts": {
-    "test": "mocha --recursive './src/**/*.test.js' --require esm",
+    "test": "mocha --recursive './src/**/*.test.js'",
     "lint": "eslint --ignore-path .eslintignore ./src/**/*.js"
   },
   "repository": {

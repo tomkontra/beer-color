@@ -1,5 +1,8 @@
-import { expect } from 'chai'
-import valueToHex from './hexColor'
+/* eslint-disable import/extensions */
+import chai from 'chai'
+import valueToHex from './hexColor.mjs'
+
+const { expect } = chai
 
 const colors = [
   { value: 1, color: '#fafad2' },

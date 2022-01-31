@@ -1,5 +1,8 @@
-import { expect } from 'chai'
-import { ebcToHex, lovibondToHex, srmToHex } from './toHex'
+/* eslint-disable import/extensions */
+import chai from 'chai'
+import { ebcToHex, lovibondToHex, srmToHex } from './toHex.mjs'
+
+const { expect } = chai
 
 describe('srm to hex', () => {
   it('should convert srm to hex value', () => {

@@ -1,2 +1,2 @@
-export { default as convertColorUnits } from './colorConverter'
-export * from './hex/toHex'
+export { default as convertColorUnits } from './colorConverter.mjs'
+export * from './hex/toHex.mjs'

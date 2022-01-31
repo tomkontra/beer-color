@@ -1,5 +1,8 @@
-import { expect } from 'chai'
-import convertColorUnits from './colorConverter'
+/* eslint-disable import/extensions */
+import chai from 'chai'
+import convertColorUnits from './colorConverter.mjs'
+
+const { expect } = chai
 
 describe('convert color units', () => {
   it('should convert srm to ebc', () => {
